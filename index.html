@@ -7,15 +7,21 @@
 </head>
 <body>
   <div id="toolbar">
+    <button id="open-file-button">📂</button>
     <button id="back-button">◀︎</button>
     <button id="forward-button">▶︎</button>
-    <button id="open-file-button">📂</button>
-    <input id="address-bar" type="text" placeholder="Search or type a URL" />
-    <button onclick="loadURL()" id="go">Go</button>
     <button id="home-button">🏠</button>
+    <input id="address-bar" type="text" placeholder="Search or type a URL" />
+    <button onclick="loadURL()" id="go">🔎</button>
+
+    <select id="tab-dropdown"></select>
+    <button id="new-tab">+</button>
+    <button id="delete-tab">-</button>
+
+    <button onclick="webview.reload();" id="reload-button">🔄</button>
   </div>
-  <div id="container">
-    <webview id="webview" src="https://start.duckduckgo.com/"></webview>
+  <div id="webview-container">
+    
   </div>
   <script src="script.js"></script>
 </body>
